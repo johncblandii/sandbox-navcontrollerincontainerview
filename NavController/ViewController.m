@@ -17,7 +17,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    UINavigationController *unc = [self.storyboard instantiateViewControllerWithIdentifier:@"Navigation"];
+    
+    CGRect frame = self.containerView.frame;
+    frame.origin.x = 0;
+    frame.origin.y = 0;
+    
+    unc.view.frame = frame;
+    
+    [self.containerView addSubview:unc.view];
 }
 
 - (void)didReceiveMemoryWarning
