@@ -1,4 +1,6 @@
 Adding a UINavController to a UIContainerView
 --------------------------------------
 
-There is something off about using a nav controller in a container view. This project is to separate these bits to get a working version through help.
+This sandbox project shows how to connect a ```UINavigationController``` to a ```UIContainerView``` in a Storyboard.
+
+The trick is to ctrl+drag from the ```UIContainerView``` to the ```UINavigationController```, select ```embed``` and run it. Easy peasy!
